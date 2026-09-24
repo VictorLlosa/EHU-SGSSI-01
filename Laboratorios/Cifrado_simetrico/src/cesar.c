@@ -15,7 +15,9 @@ int main( int argc,char *argv[]){
 
     for (int j = 0; j < strlen(mensajeCifrado); j++){
 
-      if((mensajeCifrado[j] >64 && mensajeCifrado[j] < 91) || (mensajeCifrado[j] > 96 && mensajeCifrado[j] < 123) || (mensajeCifrado == 164 || mensajeCifrado == 165)){ //si no es una letra se salta
+      if((mensajeCifrado[j] >64 && mensajeCifrado[j] < 91) ||
+        (mensajeCifrado[j] > 96 && mensajeCifrado[j] < 123) ||
+        (mensajeCifrado == 164 || mensajeCifrado == 165)){ //si no es una letra se salta
         mensajeCifrado[j] = mensajeCifrado[j] + 1;
 
         if(mensajeCifrado[j] == 91){
